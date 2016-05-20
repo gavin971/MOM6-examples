@@ -171,12 +171,29 @@ APPLY_OBC_V_FLATHER_NORTH = True !   [Boolean] default = False
 APPLY_OBC_V_FLATHER_SOUTH = True !   [Boolean] default = False
                                 ! Apply a Flather open boundary condition on the southern
                                 ! side of the global domain
+APPLY_OBC_U = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! u-points, with the configuration controlled by OBC_CONFIG
+APPLY_OBC_V = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! v-points, with the configuration controlled by OBC_CONFIG
+OBC_CONFIG = "USER"             ! default = "file"
+                                ! A string that sets how the open boundary conditions are
+                                !  configured:
+                                !     USER - call a user modified routine.
+
 ROTATION = "beta"               ! default = "2omegasinlat"
                                 ! This specifies how the Coriolis parameter is specified:
                                 !     2omegasinlat - Use twice the planetary rotation rate
                                 !       times the sine of latitude.
                                 !     betaplane - Use a beta-plane or f-plane.
                                 !     USER - call a user modified routine.
+F_0 = 0.0001                    !   [s-1] default = 0.0
+                                ! The reference value of the Coriolis parameter with the
+                                ! betaplane option.
+BETA = 0.0                      !   [m-1 s-1] default = 0.0
+                                ! The northward gradient of the Coriolis parameter with
+                                ! the betaplane option.
 THICKNESS_CONFIG = "circle_obcs" !
                                 ! A string that determines how the initial layer
                                 ! thicknesses are specified for a new run:

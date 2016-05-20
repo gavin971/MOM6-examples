@@ -122,6 +122,9 @@ ROTATION = "beta"               ! default = "2omegasinlat"
                                 !       times the sine of latitude.
                                 !     betaplane - Use a beta-plane or f-plane.
                                 !     USER - call a user modified routine.
+F_0 = 1.0E-04                   !   [s-1] default = 0.0
+                                ! The reference value of the Coriolis parameter with the
+                                ! betaplane option.
 COORD_CONFIG = "layer_ref"      !
                                 ! This specifies how layers are to be defined:
                                 !     file - read coordinate information from the file
@@ -167,6 +170,18 @@ THICKNESS_CONFIG = "circle_obcs" !
 DISK_RADIUS = 24.0              !   [kilometers]
                                 ! The radius of the initially elevated disk in the
                                 ! circle_obcs test case.
+APPLY_OBC_U = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! u-points, with the configuration controlled by OBC_CONFIG
+APPLY_OBC_V = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! v-points, with the configuration controlled by OBC_CONFIG
+OBC_CONFIG = "USER"             ! default = "file"
+                                ! A string that sets how the open boundary conditions are
+                                !  configured:
+                                !     DOME - use a slope and channel configuration for the
+                                !       DOME sill-overflow test case.
+                                !     USER - call a user modified routine.
 
 ! === module MOM_MEKE ===
 
