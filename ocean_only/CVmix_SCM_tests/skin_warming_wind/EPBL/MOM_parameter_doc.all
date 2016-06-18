@@ -212,6 +212,8 @@ USE_USER_TRACER_EXAMPLE = False !   [Boolean] default = False
                                 ! If true, use the USER_tracer_example tracer package.
 USE_DOME_TRACER = False         !   [Boolean] default = False
                                 ! If true, use the DOME_tracer tracer package.
+USE_ISOMIP_TRACER = False       !   [Boolean] default = False
+                                ! If true, use the ISOMIP_tracer tracer package.
 USE_IDEAL_AGE_TRACER = False    !   [Boolean] default = False
                                 ! If true, use the ideal_age_example tracer package.
 USE_REGIONAL_DYES = False       !   [Boolean] default = False
@@ -382,6 +384,10 @@ REGRID_COMPRESSIBILITY_FRACTION = 0.0 !   [not defined] default = 0.0
                                 ! When interpolating potential density profiles we can add
                                 ! some artificial compressibility solely to make homogenous
                                 ! regions appear stratified.
+ZSTAR_RIGID_SURFACE_THRESHOLD = -1.0E+30 !   [m] default = -1.0E+30
+                                ! A threshold height used to detect the presence of a rigid-surface
+                                ! depressing the upper-surface of the model, such as an ice-shelf.
+                                ! This is a temporary work around for initialization under an ice-shelf.
 ALE_COORDINATE_CONFIG = "UNIFORM" ! default = "UNIFORM"
                                 ! Determines how to specify the coordinate
                                 ! resolution. Valid options are:

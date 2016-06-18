@@ -220,6 +220,8 @@ USE_USER_TRACER_EXAMPLE = False !   [Boolean] default = False
                                 ! If true, use the USER_tracer_example tracer package.
 USE_DOME_TRACER = False         !   [Boolean] default = False
                                 ! If true, use the DOME_tracer tracer package.
+USE_ISOMIP_TRACER = False       !   [Boolean] default = False
+                                ! If true, use the ISOMIP_tracer tracer package.
 USE_IDEAL_AGE_TRACER = False    !   [Boolean] default = False
                                 ! If true, use the ideal_age_example tracer package.
 USE_REGIONAL_DYES = False       !   [Boolean] default = False
@@ -285,8 +287,12 @@ TOPO_CONFIG = "seamount"        !
                                 !     USER - call a user modified routine.
 SEAMOUNT_DELTA = 0.5            !   [non-dim] default = 0.5
                                 ! Non-dimensional height of seamount.
-SEAMOUNT_LENGTH_SCALE = 20.0    !   [Same as x,y] default = 20.0
-                                ! Length scale of seamount.
+SEAMOUNT_X_LENGTH_SCALE = 20.0  !   [Same as x,y] default = 20.0
+                                ! Length scale of seamount in x-direction.
+                                ! Set to zero make topography uniform in the x-direction.
+SEAMOUNT_Y_LENGTH_SCALE = 0.0   !   [Same as x,y] default = 0.0
+                                ! Length scale of seamount in y-direction.
+                                ! Set to zero make topography uniform in the y-direction.
 MAXIMUM_DEPTH = 4000.0          !   [m]
                                 ! The maximum depth of the ocean.
 MINIMUM_DEPTH = 1.0             !   [m] default = 0.0
@@ -420,6 +426,10 @@ REGRID_COMPRESSIBILITY_FRACTION = 0.0 !   [not defined] default = 0.0
                                 ! When interpolating potential density profiles we can add
                                 ! some artificial compressibility solely to make homogenous
                                 ! regions appear stratified.
+ZSTAR_RIGID_SURFACE_THRESHOLD = -1.0E+30 !   [m] default = -1.0E+30
+                                ! A threshold height used to detect the presence of a rigid-surface
+                                ! depressing the upper-surface of the model, such as an ice-shelf.
+                                ! This is a temporary work around for initialization under an ice-shelf.
 ALE_COORDINATE_CONFIG = "UNIFORM" ! default = "UNIFORM"
                                 ! Determines how to specify the coordinate
                                 ! resolution. Valid options are:
