@@ -104,6 +104,12 @@ MINIMUM_DEPTH = 1.0             !   [m] default = 0.0
                                 ! The minimum depth of the ocean.
 MAXIMUM_DEPTH = 600.0           !   [m]
                                 ! The maximum depth of the ocean.
+APPLY_OBC_U = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! u-points, with the configuration controlled by OBC_CONFIG
+APPLY_OBC_V = True              !   [Boolean] default = False
+                                ! If true, open boundary conditions may be set at some
+                                ! v-points, with the configuration controlled by OBC_CONFIG
 APPLY_OBC_U_FLATHER_EAST = True !   [Boolean] default = False
                                 ! Apply a Flather open boundary condition on the eastern
                                 ! side of the global domain
@@ -116,6 +122,12 @@ APPLY_OBC_V_FLATHER_NORTH = True !   [Boolean] default = False
 APPLY_OBC_V_FLATHER_SOUTH = True !   [Boolean] default = False
                                 ! Apply a Flather open boundary condition on the southern
                                 ! side of the global domain
+OBC_CONFIG = "USER"             ! default = "file"
+                                ! A string that sets how the open boundary conditions are
+                                !  configured:
+                                !     DOME - use a slope and channel configuration for the
+                                !       DOME sill-overflow test case.
+                                !     USER - call a user modified routine.
 ROTATION = "beta"               ! default = "2omegasinlat"
                                 ! This specifies how the Coriolis parameter is specified:
                                 !     2omegasinlat - Use twice the planetary rotation rate
@@ -167,18 +179,6 @@ THICKNESS_CONFIG = "circle_obcs" !
 DISK_RADIUS = 24.0              !   [kilometers]
                                 ! The radius of the initially elevated disk in the
                                 ! circle_obcs test case.
-APPLY_OBC_U = True              !   [Boolean] default = False
-                                ! If true, open boundary conditions may be set at some
-                                ! u-points, with the configuration controlled by OBC_CONFIG
-APPLY_OBC_V = True              !   [Boolean] default = False
-                                ! If true, open boundary conditions may be set at some
-                                ! v-points, with the configuration controlled by OBC_CONFIG
-OBC_CONFIG = "USER"             ! default = "file"
-                                ! A string that sets how the open boundary conditions are
-                                !  configured:
-                                !     DOME - use a slope and channel configuration for the
-                                !       DOME sill-overflow test case.
-                                !     USER - call a user modified routine.
 
 ! === module MOM_MEKE ===
 
