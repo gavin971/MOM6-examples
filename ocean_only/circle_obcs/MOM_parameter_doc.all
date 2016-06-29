@@ -243,10 +243,10 @@ MINIMUM_DEPTH = 1.0             !   [m] default = 0.0
                                 ! The minimum depth of the ocean.
 MAXIMUM_DEPTH = 600.0           !   [m]
                                 ! The maximum depth of the ocean.
-APPLY_OBC_U = True              !   [Boolean] default = False
+APPLY_OBC_U = False             !   [Boolean] default = False
                                 ! If true, open boundary conditions may be set at some
                                 ! u-points, with the configuration controlled by OBC_CONFIG
-APPLY_OBC_V = True              !   [Boolean] default = False
+APPLY_OBC_V = False             !   [Boolean] default = False
                                 ! If true, open boundary conditions may be set at some
                                 ! v-points, with the configuration controlled by OBC_CONFIG
 APPLY_OBC_U_FLATHER_EAST = True !   [Boolean] default = False
@@ -261,12 +261,6 @@ APPLY_OBC_V_FLATHER_NORTH = True !   [Boolean] default = False
 APPLY_OBC_V_FLATHER_SOUTH = True !   [Boolean] default = False
                                 ! Apply a Flather open boundary condition on the southern
                                 ! side of the global domain
-OBC_CONFIG = "USER"             ! default = "file"
-                                ! A string that sets how the open boundary conditions are
-                                !  configured:
-                                !     DOME - use a slope and channel configuration for the
-                                !       DOME sill-overflow test case.
-                                !     USER - call a user modified routine.
 MASKING_DEPTH = -9999.0         !   [m] default = -9999.0
                                 ! The depth below which to mask points as land points, for which all
                                 ! fluxes are zeroed out. MASKING_DEPTH is ignored if negative.
@@ -384,6 +378,17 @@ OBC_RAD_THICK_WT = 0.2          !   [nondim] default = 0.2
                                 ! time level (1) or the running mean (0) for thicknesses.
                                 ! Valid values range from 0 to 1. This is only used if
                                 ! one of the APPLY_OBC_[UV]_FLATHER_...  is true.
+READ_OBC_UV = False             !   [Boolean] default = False
+                                ! If true, read the values for the velocity open boundary
+                                ! conditions from the file specified by OBC_FILE.
+READ_OBC_ETA = False            !   [Boolean] default = False
+                                ! If true, read the values for the sea surface height
+                                ! open boundary conditions from the file specified by
+                                ! OBC_FILE.
+READ_OBC_TS = False             !   [Boolean] default = False
+                                ! If true, read the values for the temperature and
+                                ! salinity open boundary conditions from the file
+                                ! specified by OBC_FILE.
 AVAILABLE_DIAGS_FILE = "available_diags.000000" ! default = "available_diags.000000"
                                 ! A file into which to write a list of all available
                                 ! ocean diagnostics that can be included in a diag_table.
