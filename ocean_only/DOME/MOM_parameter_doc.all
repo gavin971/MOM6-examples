@@ -241,6 +241,7 @@ TOPO_CONFIG = "DOME"            !
                                 !     DOME2D - use a shelf and slope configuration for the
                                 !       DOME2D gravity current/overflow test case.
                                 !     seamount - Gaussian bump for spontaneous motion test case.
+                                !     supercritical - flat but with 8.95 degree land mask.
                                 !     Phillips - ACC-like idealized topography used in the Phillips config.
                                 !     USER - call a user modified routine.
 
@@ -259,7 +260,6 @@ OBC_SEGMENT_001 = "J=N,I=110:100,SIMPLE" !
 OBC_CONFIG = "DOME"             ! default = "none"
                                 ! A string that sets how the open boundary conditions are
                                 !  configured:
-                                !     tidal_bay - tidally-resonant rectangular basin.
 MASKING_DEPTH = -9999.0         !   [m] default = -9999.0
                                 ! The depth below which to mask points as land points, for which all
                                 ! fluxes are zeroed out. MASKING_DEPTH is ignored if negative.
