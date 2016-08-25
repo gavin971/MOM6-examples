@@ -117,9 +117,9 @@ OBC_SEGMENT_001 = "I=N,J=0:N,FLATHER" !
                                 ! Documentation needs to be dynamic?????
 OBC_SEGMENT_002 = "I=0,J=N:0,FLATHER" !
                                 ! Documentation needs to be dynamic?????
-OBC_SEGMENT_003 = "J=N,I=N:0,FLATHER" !
+OBC_SEGMENT_003 = "J=N,I=26:-1,FLATHER" !
                                 ! Documentation needs to be dynamic?????
-OBC_SEGMENT_004 = "J=0,I=0:N,FLATHER" !
+OBC_SEGMENT_004 = "J=0,I=-1:26,FLATHER" !
                                 ! Documentation needs to be dynamic?????
 ROTATION = "beta"               ! default = "2omegasinlat"
                                 ! This specifies how the Coriolis parameter is specified:
