@@ -230,7 +230,7 @@ UPWIND_1ST_CONTINUITY = True    !   [Boolean] default = False
                                 ! If true, CONTINUITY_PPM becomes a 1st-order upwind
                                 ! continuity solver.  This scheme is highly diffusive
                                 ! but may be useful for debugging or in single-column
-                                ! mode where its minimal stensil is useful.
+                                ! mode where its minimal stencil is useful.
 ETA_TOLERANCE = 1.0E-06         !   [m] default = 3.75E-09
                                 ! The tolerance for the differences between the
                                 ! barotropic and baroclinic estimates of the sea surface
@@ -390,6 +390,9 @@ RECLAIM_FRAZIL = False          !   [Boolean] default = True
                                 ! the freezing point.
 
 ! === module MOM_energetic_PBL ===
+EPBL_USTAR_MIN = 1.45842E-18    !   [meter second-1]
+                                ! The (tiny) minimum friction velocity used within the
+                                ! ePBL code, derived from OMEGA and ANGSTROM.
 
 ! === module MOM_regularize_layers ===
 HMIX_MIN = 2.0                  !   [m] default = 0.0
