@@ -8,6 +8,11 @@ CGRID_ICE_DYNAMICS = True       !   [Boolean] default = False
                                 ! dynamics; if false use a B-grid discretization.
 USE_SLAB_ICE = False            !   [Boolean] default = False
                                 ! If true, use the very old slab-style ice.
+SINGLE_ICE_STATE_TYPE = True    !   [Boolean] default = True
+                                ! If true, the fast and slow portions of the ice use a
+                                ! single common ice_state_type.  Otherwise they point to
+                                ! different ice_state_types that need to be explicitly
+                                ! copied back and forth.
 ICE_OCEAN_STRESS_STAGGER = "C"  ! default = "C"
                                 ! A case-insensitive character string to indicate the
                                 ! staggering of the stress field on the ocean that is
@@ -84,6 +89,9 @@ DO_RIDGING = False              !   [Boolean] default = False
                                 ! If true, call the ridging routines.
 RESTARTFILE = "ice_model.res.nc" ! default = "ice_model.res.nc"
                                 ! The name of the restart file.
+FAST_ICE_RESTARTFILE = "ice_model.res.nc" ! default = "ice_model.res.nc"
+                                ! The name of the restart file for those elements of the
+                                ! the sea ice that are handled by the fast ice PEs.
 WRITE_GEOM = 1                  ! default = 1
                                 ! If =0, never write the geometry and vertical grid files.
                                 ! If =1, write the geometry and vertical grid files only for
