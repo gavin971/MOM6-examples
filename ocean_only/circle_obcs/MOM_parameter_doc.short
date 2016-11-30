@@ -176,7 +176,6 @@ THICKNESS_CONFIG = "circle_obcs" !
                                 !     seamount - TBD AJA.
                                 !     soliton - Equatorial Rossby soliton.
                                 !     rossby_front - a mixed layer front in thermal wind balance.
-                                !     Kelvin - coastally-trapped Kelvin wave.
                                 !     USER - call a user modified routine.
 
 ! === module circle_obcs_initialize_thickness ===
