@@ -325,12 +325,6 @@ MINIMUM_DEPTH = 1.0             !   [m] default = 0.0
 ! Controls where open boundaries are located, what kind of boundary condition to impose, and what data to apply, if any.
 OBC_NUMBER_OF_SEGMENTS = 0      ! default = 0
                                 ! The number of open boundary segments.
-OBC_CONFIG = "None"             ! default = "None"
-                                ! A string that sets how the open boundary conditions are
-                                !  configured:
-OBC_VALUES_CONFIG = "None"      ! default = "None"
-                                ! A string that sets how the open boundary values are
-                                !  configured:
 MASKING_DEPTH = -9999.0         !   [m] default = -9999.0
                                 ! The depth below which to mask points as land points, for which all
                                 ! fluxes are zeroed out. MASKING_DEPTH is ignored if negative.
