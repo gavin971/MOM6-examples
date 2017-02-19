@@ -125,11 +125,11 @@ OBC_ZERO_BIHARMONIC = True      !   [Boolean] default = False
                                 ! viscosity term.
 OBC_SEGMENT_001 = "J=N,I=N:0,LEGACY,ORLANSKI" !
                                 ! Documentation needs to be dynamic?????
-OBC_SEGMENT_002 = "J=0,I=0:N,LEGACY" !
+OBC_SEGMENT_002 = "J=0,I=0:N,LEGACY,ORLANSKI" !
                                 ! Documentation needs to be dynamic?????
-OBC_SEGMENT_003 = "I=N,J=0:N,LEGACY" !
+OBC_SEGMENT_003 = "I=N,J=0:N,LEGACY,ORLANSKI" !
                                 ! Documentation needs to be dynamic?????
-OBC_SEGMENT_004 = "I=0,J=N:0,LEGACY" !
+OBC_SEGMENT_004 = "I=0,J=N:0,LEGACY,ORLANSKI" !
                                 ! Documentation needs to be dynamic?????
 ROTATION = "beta"               ! default = "2omegasinlat"
                                 ! This specifies how the Coriolis parameter is specified:
