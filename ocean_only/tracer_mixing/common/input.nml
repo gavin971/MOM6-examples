@@ -10,20 +10,8 @@
  /
 
  &fms_nml
-         clock_grain='ROUTINE'
-         clock_flags='NONE'
          domains_stack_size = 710000,
          stack_size = 0 /
 
  &ocean_domains_nml
  /
- 
- &ocean_solo_nml
-            months  = 0
-            days    = 1
-            hours   = 0
-            minutes = 0
-            seconds = 0
-            date_init = 1,1,1,0,0,0
-            calendar = 'julian' /
-
