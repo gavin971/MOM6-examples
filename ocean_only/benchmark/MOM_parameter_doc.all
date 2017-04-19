@@ -283,6 +283,12 @@ TRACERS_MAY_REINIT = False      !   [Boolean] default = False
                                 ! it is a fatal error if the tracers are not found in the
                                 ! restart files of a restarted run.
 
+! === module MOM_boundary_update ===
+USE_TIDAL_BAY_OBC = False       !   [Boolean] default = False
+                                ! If true, use the tidal_bay open boundary.
+USE_KELVIN_WAVE_OBC = False     !   [Boolean] default = False
+                                ! If true, use the Kelvin wave open boundary.
+
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.

@@ -72,6 +72,8 @@ USE_IDEAL_AGE_TRACER = True     !   [Boolean] default = False
 
 ! === module ideal_age_example ===
 
+! === module MOM_boundary_update ===
+
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.

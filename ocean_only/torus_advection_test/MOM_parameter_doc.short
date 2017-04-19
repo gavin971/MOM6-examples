@@ -83,6 +83,8 @@ ADVECTION_TEST_X_WIDTH = 21.6   !   [not defined] default = 0.0
 ADVECTION_TEST_Y_WIDTH = 21.6   !   [not defined] default = 0.0
                                 ! The y-width of the test-functions.
 
+! === module MOM_boundary_update ===
+
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.

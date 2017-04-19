@@ -66,6 +66,8 @@ SPONGE = True                   !   [Boolean] default = False
                                 ! The exact location and properties of those sponges are
                                 ! specified from MOM_initialization.F90.
 
+! === module MOM_boundary_update ===
+
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.
