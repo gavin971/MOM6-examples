@@ -57,6 +57,8 @@ USE_DOME_TRACER = True          !   [Boolean] default = False
 
 ! === module DOME_tracer ===
 
+! === module MOM_boundary_update ===
+
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.
