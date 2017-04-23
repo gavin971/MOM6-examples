@@ -224,10 +224,14 @@ SPONGE = True                   !   [Boolean] default = False
                                 ! specified from MOM_initialization.F90.
 
 ! === module MOM_boundary_update ===
+USE_FILE_OBC = False            !   [Boolean] default = False
+                                ! If true, use external files for the open boundary.
 USE_TIDAL_BAY_OBC = False       !   [Boolean] default = False
                                 ! If true, use the tidal_bay open boundary.
 USE_KELVIN_WAVE_OBC = False     !   [Boolean] default = False
                                 ! If true, use the Kelvin wave open boundary.
+USE_SHELFWAVE_OBC = False       !   [Boolean] default = False
+                                ! If true, use the shelfwave open boundary.
 
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
@@ -279,6 +283,7 @@ TOPO_CONFIG = "DOME"            !
                                 !       DOME2D gravity current/overflow test case.
                                 !     Kelvin - flat but with rotated land mask.
                                 !     seamount - Gaussian bump for spontaneous motion test case.
+                                !     shelfwave - exponential slope for shelfwave test case.
                                 !     supercritical - flat but with 8.95 degree land mask.
                                 !     Phillips - ACC-like idealized topography used in the Phillips config.
                                 !     USER - call a user modified routine.
@@ -440,6 +445,7 @@ OBC_USER_CONFIG = "DOME"        ! default = "none"
                                 !    tidal_bay - Flather with tidal forcing on eastern boundary
                                 !    supercritical - now only needed here for the allocations
                                 !    Kelvin - barotropic Kelvin wave forcing on the western boundary
+                                !    shelfwave - Flather with shelf wave forcing on western boundary
                                 !    USER - user specified
 
 ! === module MOM_diag_mediator ===
