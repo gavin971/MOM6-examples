@@ -66,8 +66,6 @@ EQN_OF_STATE = "LINEAR"         ! default = "WRIGHT"
 
 ! === module MOM_tracer_flow_control ===
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_fixed_initialization ===
 INPUTDIR = "INPUT"              ! default = "."
                                 ! The directory in which input files are found.
@@ -133,6 +131,8 @@ ROTATION = "beta"               ! default = "2omegasinlat"
                                 !       times the sine of latitude.
                                 !     betaplane - Use a beta-plane or f-plane.
                                 !     USER - call a user modified routine.
+
+! === module MOM_boundary_update ===
 
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "layer_ref"      !

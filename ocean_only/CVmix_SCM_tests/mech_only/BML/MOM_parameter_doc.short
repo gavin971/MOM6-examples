@@ -65,8 +65,6 @@ DRHO_DS = 0.764                 !   [kg m-3 PSU-1] default = 0.8
 
 ! === module MOM_tracer_flow_control ===
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_fixed_initialization ===
 
 ! === module MOM_grid_init ===
@@ -125,6 +123,8 @@ ROTATION = "betaplane"          ! default = "2omegasinlat"
 F_0 = 1.0E-04                   !   [s-1] default = 0.0
                                 ! The reference value of the Coriolis parameter with the
                                 ! betaplane option.
+
+! === module MOM_boundary_update ===
 
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "file"           !
