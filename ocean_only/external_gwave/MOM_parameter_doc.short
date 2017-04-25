@@ -139,8 +139,6 @@ ROTATION = "beta"               ! default = "2omegasinlat"
                                 !     betaplane - Use a beta-plane or f-plane.
                                 !     USER - call a user modified routine.
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "layer_ref"      !
                                 ! This specifies how layers are to be defined:

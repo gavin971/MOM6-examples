@@ -133,8 +133,6 @@ MAXIMUM_DEPTH = 5500.0          !   [m]
 ! === module MOM_open_boundary ===
 ! Controls where open boundaries are located, what kind of boundary condition to impose, and what data to apply, if any.
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "ts_range"       !
                                 ! This specifies how layers are to be defined:

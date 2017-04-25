@@ -116,8 +116,6 @@ F_0 = 7.59943E-05               !   [s-1] default = 0.0
                                 ! The reference value of the Coriolis parameter with the
                                 ! betaplane option.
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "file"           !
                                 ! This specifies how layers are to be defined:

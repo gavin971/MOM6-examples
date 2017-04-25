@@ -130,8 +130,6 @@ BETA = 2.0E-11                  !   [m-1 s-1] default = 0.0
                                 ! The northward gradient of the Coriolis parameter with
                                 ! the betaplane option.
 
-! === module MOM_boundary_update ===
-
 ! === module MOM_coord_initialization ===
 COORD_CONFIG = "gprime"         !
                                 ! This specifies how layers are to be defined:
